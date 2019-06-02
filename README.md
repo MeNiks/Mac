@@ -7,3 +7,7 @@
 
 
 # Chrome Inspector - Cmd + Option +J
+
+# Parmenantly Export Path - 
+1. Open file in submile /private/etc/paths
+2. Added Path which you want and press enter
