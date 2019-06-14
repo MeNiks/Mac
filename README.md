@@ -14,7 +14,7 @@ Cmd + Option +J
 # Display git branch in terminal
 
 Procedure 1
-``
+```
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
