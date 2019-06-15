@@ -44,6 +44,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 Auto Completion
 https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
 
+Power Level 9k
+brew tap sambadevi/powerlevel9k
+brew install powerlevel9k
+echo "source /usr/local/opt/powerlevel9k@0.6.3/powerlevel9k.zsh-theme" >> ~/.zshrc
+
 Oh My Zsh Fonts
 git clone https://github.com/powerline/fonts.git
 $ cd fonts
