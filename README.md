@@ -9,39 +9,45 @@ Cmd + Option +J
 1. Open file in submile /private/etc/paths
 2. Added Path which you want and press enter
 
-# Display git branch in terminal
-
-Procedure 1
+# Git Configure Terminal
+Just to display git branch in terminal
 ```
+Add to .bash_profile file
+parse_git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+export PS1="\u@\h \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
+```
+
+Or
+
+Oh My Zsh Installation
+```
+Basic Setup
+1. xcode-select --install
+2. ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+3. brew doctor
+4. brew install zsh
+
+Oh My Zsh Basic Installation
+Link : https://github.com/robbyrussell/oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+Auto Completion
+curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
+Add to .bash_profile file
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 
-
-parse_git_branch() {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
-
-export PS1="\u@\h \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
-```
-
-Procedure 2
-```
-xcode-select --install
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew doctor
-brew install zsh
-
-https://github.com/robbyrussell/oh-my-zsh
-Basic Installation
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
+Oh My Zsh Fonts
 git clone https://github.com/powerline/fonts.git
 $ cd fonts
 $ ./install.sh
 
 Change the Theme to “agnoster”
 
-$ open ~/.zshrc
+open ~/.zshrc
 Set ZSH_THEME="agnoster" and save the file
+
 ```
