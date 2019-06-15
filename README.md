@@ -17,6 +17,14 @@ parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 export PS1="\u@\h \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
+
+
+Auto Completion
+curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
+Add to .bash_profile file
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
 ```
 
 Or
@@ -34,11 +42,7 @@ Link : https://github.com/robbyrussell/oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 Auto Completion
-curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
-Add to .bash_profile file
-if [ -f ~/.git-completion.bash ]; then
-  . ~/.git-completion.bash
-fi
+https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
 
 Oh My Zsh Fonts
 git clone https://github.com/powerline/fonts.git
