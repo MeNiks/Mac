@@ -58,11 +58,9 @@ Change the Theme to “agnoster”
 
 open ~/.zshrc
 Set ZSH_THEME="agnoster" and save the file
-
+```
 References :
 https://github.com/robbyrussell/oh-my-zsh
 https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
 https://github.com/bhilburn/powerlevel9k
 https://github.com/powerline/fonts
-
-```
