@@ -1,3 +1,7 @@
+# Show Hide hidden files
+defaults write com.apple.finder AppleShowAllFiles YES
+Press Option and right click on finder and click relaunch
+
 # To add directory location to path
 1. Go to /etc/paths
 2. Add the path in file and press enter
