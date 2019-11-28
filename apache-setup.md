@@ -69,3 +69,14 @@ then modify php.ini
 upload_max_filesize = 0
 post_max_size = 0
 ```
+
+7. Add to vhosts
+```
+/private/etc/apache2/extra/httpd-vhosts.conf
+<Directory "/path/anydir">
+    Options Indexes FollowSymLinks MultiViews
+    AllowOverride None
+    Order allow,deny
+    Allow from all
+</Directory>
+```
