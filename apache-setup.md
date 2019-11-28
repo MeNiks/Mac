@@ -43,7 +43,7 @@ DocumentRoot "/path/anydir"
 </Directory>
 ```
 
-4. Change permission of that directory
+4. Change permission of that directory(Optional)
 ```
 chmod -R 777 /path/anydir
 ```
