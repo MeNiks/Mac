@@ -2,7 +2,7 @@
 
 1. Navigate to folder and update file httpd.conf 
 ```
-/private/etc/apache2/
+/private/etc/apache2/httpd.conf
 ```
 
 2. Enable php by uncommenting below line.
