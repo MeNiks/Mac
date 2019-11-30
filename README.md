@@ -62,6 +62,11 @@ Change the Theme to “agnoster”
 
 open ~/.zshrc
 Set ZSH_THEME="agnoster" and save the file
+
+Go to android studio and set terminal
+/bin/zsh
+
+Note : Zsh themes are present here /Users/username/.oh-my-zsh/themes
 ```
 
 References :
