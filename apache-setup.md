@@ -43,15 +43,9 @@ DocumentRoot "/path/anydir"
 </Directory>
 ```
 
-4. Change permission of that directory(Optional)
+4. Changing Php permission to create files with logged in user privilage
 ```
-chmod -R 777 /path/anydir
-```
-
-5. Changing Php permission to create files with logged in user privilage
-```
-5.1 > Open : /private/etc/apache2/httpd.conf
-5.2 > Find below and change 
+Find below and change 
 From
 User _www
 Group _www
@@ -59,7 +53,12 @@ To
 User your_mac_username
 Group staff
 Note : Our primary group is always staff unless you or your user directory manager changed it.
-5.3 > sudo apachectl restart
+> sudo apachectl restart
+```
+
+5. Change permission of that directory(Optional)
+```
+chmod -R 777 /path/anydir
 ```
 
 6. Changing max upload size, Run below command
