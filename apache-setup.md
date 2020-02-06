@@ -79,3 +79,4 @@ post_max_size = 0
     Allow from all
 </Directory>
 ```
+8. sudo apachectl restart
