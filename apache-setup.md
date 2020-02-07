@@ -43,6 +43,16 @@ DocumentRoot "/path/anydir"
 </Directory>
 ```
 
+3. Directory Listing Enable(Optional)
+```
+<Directory "/path">
+    Options Indexes FollowSymLinks Multiviews
+    MultiviewsMatch Any
+    AllowOverride None
+    Require all granted
+</Directory>
+```
+
 4. Changing Php permission to create files with logged in user privilage
 ```
 Find below and change 
