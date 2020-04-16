@@ -42,6 +42,10 @@ DocumentRoot "/path/anydir"
     Require all granted
 </Directory>
 ```
+```
+# To obey .htaccess
+AllowOverride All 
+```
 
 3. Directory Listing Enable(Optional)
 ```
