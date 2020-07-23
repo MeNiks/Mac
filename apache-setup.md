@@ -95,3 +95,8 @@ post_max_size = 0
 ```
 
 8. sudo apachectl restart
+
+For any problems test by
+```
+apachectl configtest
+```
