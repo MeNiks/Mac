@@ -1,10 +1,10 @@
 # External Keyboart Mouse Configuration
-1. 	For Changing windows button to option and alt button to command
-	System Preference -> Search Keyboard And Select -> After that select keyboard tab -> Modify keys Button -> Select your keyboard -> Change Option to command & Command to Option
-2. 	Mouse Scroll
-	System Preference -> Un tick scroll direction : Natural
-3. 	For enabling zooming from keyboard
-	System Preference -> Accessibility -> Zoom -> Tick Use scroll gesture with modifier keys to zoom -> Select Control key for this action	
+1. For Changing windows button to option and alt button to command
+   System Preference -> Search Keyboard And Select -> After that select keyboard tab -> Modify keys Button -> Select your keyboard -> Change Option to command & Command to Option
+2. Mouse Scroll
+   System Preference -> Un tick scroll direction : Natural
+3. For enabling zooming from keyboard
+   System Preference -> Accessibility -> Zoom -> Tick Use scroll gesture with modifier keys to zoom -> Select Control key for this action	
 
 # Show Hide hidden files
 1. defaults write com.apple.finder AppleShowAllFiles YES
