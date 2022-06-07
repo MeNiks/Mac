@@ -1,3 +1,5 @@
+# PHP Installation on Mac Monterey
+```
 https://wpbeaches.com/updating-to-php-versions-7-4-and-8-on-macos-12-monterey/
 
 Ref - https://www.simplified.guide/macos/keychain-ca-code-signing-create
@@ -54,3 +56,4 @@ Run on Terminal
 Update file /etc/apache2/other/00-httpd.conf
 LoadModule php7_module /opt/homebrew/opt/php@7.4/lib/httpd/modules/libphp7.so "Nikhilesh Patve"
 sudo apachectl -k restart
+```
