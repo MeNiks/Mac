@@ -1,9 +1,14 @@
 # PHP Installation on Mac Monterey
+
+1. Install PHP
 ```
 https://wpbeaches.com/updating-to-php-versions-7-4-and-8-on-macos-12-monterey/
+```
 
+
+2. Certificate Authority for Code Signing in macOS
+```
 Ref - https://www.simplified.guide/macos/keychain-ca-code-signing-create
-Certificate Authority for Code Signing in macOS
 Launch Keychain Access.
 Go to Keychain Access → Certificate Assistant → Create a Certificate Authority from the menu bar.
 Set a name for your CA.-> Ex- "Nikhilesh Patve CA"
@@ -34,10 +39,12 @@ Click on When using this certificate select list.
 Click on Always trust.
 Close the CA information window.
 Authenticate to the system to enable your changes.
+```
 
 
+3. Code signing certificate in macOS
+```
 https://www.simplified.guide/macos/keychain-cert-code-signing-create
-Code signing certificate in macOS
 Launch Keychain Access.
 Go to Keychain Access → Certificate Assistant → Create a Certificate from the menu bar.
 Set the name of the certificate. Ex - "Nikhilesh Patve"
@@ -48,8 +55,10 @@ Select Code Signing from the list.
 Click Create to continue.
 Select CA or issuer from the list and click Create.
 Click Done to finish the process.
+```
 
-
+4. Code Signing
+```
 https://www.simplified.guide/macos/apache-php-homebrew-codesign
 Run on Terminal
 >codesign --sign "Nikhilesh Patve Php" --force --keychain ~/Library/Keychains/login.keychain-db /usr/local/opt/php@7.4/lib/httpd/modules/libphp7.so
