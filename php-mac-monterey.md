@@ -2,7 +2,12 @@
 
 1. Install PHP
 ```
-https://wpbeaches.com/updating-to-php-versions-7-4-and-8-on-macos-12-monterey/
+Ref - https://wpbeaches.com/updating-to-php-versions-7-4-and-8-on-macos-12-monterey/
+brew tap shivammathur/php
+brew install shivammathur/php/php@7.4
+brew link --overwrite --force php@7.4
+Restart the Terminal
+php -v
 ```
 
 
