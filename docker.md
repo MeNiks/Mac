@@ -11,3 +11,12 @@ all to remove for all containers
 -v Remove the named volumes declared in the volumes section of docker-compose.yml and the anonymous volumes attached to the container
 --remove-orphans Remove containers not defined in docker-compose.yml
 ```
+
+
+## docker container ls
+
+## docker attach <container id>
+```
+detaching from docker:
+- ctr + p and ctr + q
+```
