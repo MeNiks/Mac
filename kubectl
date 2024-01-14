@@ -1,0 +1,9 @@
+```
+kubectl config get-contexts
+kubectl config current-context
+kubectl get svc
+kubectl config view --minify
+kubectl get pods
+kubectl logs podname -n prod-us
+kubectl config use-context contextname
+```
