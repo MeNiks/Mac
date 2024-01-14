@@ -44,10 +44,12 @@ Or
 Oh My Zsh Installation
 ```
 Basic Setup
-1. xcode-select --install
-2. ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-3. brew doctor
-4. brew install zsh
+- xcode-select --install
+- Brew gets install in `/usr/local` if folder is empty then brew is not installed for m1/m2 `ls /opt/homebrew`
+- ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+- Update brew with `brew update`
+- Health check with `brew doctor`
+- brew install zsh
 
 Oh My Zsh Basic Installation
 Link : https://github.com/robbyrussell/oh-my-zsh
