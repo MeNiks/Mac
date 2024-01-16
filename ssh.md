@@ -28,3 +28,18 @@ To check status
 Check local ports
 >netstat -an | grep tcp | grep LIST
 ```
+
+## SSH
+```
+Login to remote system
+> ssh niks@google.com
+niks - username
+google.com - is server domain it can also be ip address
+
+Port forwarding (https://www.youtube.com/watch?v=x1yQF1789cE)
+> ssh -N -L localhost:8888:localhost:80 root@159.223.180.93
+
+-N - Do not enter in ssh machine
+-L - Local port fordwarding
+
+```
