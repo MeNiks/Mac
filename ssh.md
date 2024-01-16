@@ -42,4 +42,12 @@ Port forwarding (https://www.youtube.com/watch?v=x1yQF1789cE)
 -N - Do not enter in ssh machine
 -L - Local port fordwarding
 
+>ssh -v hopper
+HOST hopper
+    ProxyCommand ~/.ssh/somescript.sh param1 %r %p ~/.ssh/id_rsa.pub
+    User ubuntu
+
+SSh by default replaces the value of below format specifier
+%r - user name "ubuntu" what is defiled in ssh config below ProxyCommand
+%p - port
 ```
