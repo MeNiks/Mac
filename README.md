@@ -7,6 +7,7 @@
    System Preference -> Accessibility -> Zoom -> Tick Use scroll gesture with modifier keys to zoom -> Select Control key for this action	
 
 # How to enable fingerprint in mac in iterm / terminal
+```
 >sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local
 >Uncomment link
 >#auth       sufficient     pam_tid.so
@@ -17,7 +18,7 @@
 >Exit
 >Open new terminal
 >sudo ls -> You should see fingerprint auth now
-
+```
 # Show Hide hidden files
 1. defaults write com.apple.finder AppleShowAllFiles YES
 2. Press Option and right click on finder and click relaunch
