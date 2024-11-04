@@ -34,6 +34,17 @@ Cmd + Option +J
 1. Open file in submile /private/etc/paths
 2. Added Path which you want and press enter
 
+# Zsh Learnings
+```
+In ~/.zshrc
+export ZSH="$HOME/.oh-my-zsh" #To export var
+ZSH_THEME="powerlevel10k/powerlevel10k" # To change the theme
+source ~/.p10k.zsh # Add this to the last line of ~/.zshrc
+
+~/.p10k.zsh - has all the code
+Search $#branch > 32 -> comment the line to show full branch name in terminal
+```
+
 # Git Configure Terminal
 Just to display git branch in terminal
 ```
