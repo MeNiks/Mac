@@ -1,3 +1,4 @@
+```
 tmux new -s server
 Ctrl + b, then % - Horizontal
 Ctrl + b, then " - Vertical
@@ -9,3 +10,4 @@ Ctrl + b, then & - Kill window
 Ctrl + b, then d - Detach
 tmux attach -t server - Attach to a session
 tmux ls - List sessions
+```
